@@ -1,0 +1,65 @@
+name: CreativeGuard
+main: creativeguard.CreativeGuard
+version: 1.0.4
+author: L4BORG
+description: Will make you creative server safer place!
+depend: [ProtocolLib]
+
+commands:
+  searchandseizure:
+    description: Search and Seizure!
+    aliases: [sas]
+    usage: '/<command> [material]'
+    permission: creativeguard.command.searchandseizure
+  checknbt:
+    description: Check NBT data for item!
+    aliases: [cnbt]
+    usage: '/<command>'
+    permission: creativeguard.command.checknbt
+
+permissions:
+  creativeguard.commandblock:
+    description: 'Allow player to place CommandBlocks...'
+    default: op
+  creativeguard.barrier:
+    description: 'Allow player to place Barriers...'
+    default: op
+
+  creativeguard.custompotioneffects:
+    description: 'Allow player to use/own item with CustomPostionEffects NBT.'
+    default: op
+  creativeguard.storedenchants:
+    description: 'Allow player to use/own item with StoredEnchants NBT.'
+    default: op
+  creativeguard.hideflags:
+    description: 'Allow player to use/own item with HideFlags NBT.'
+    default: op
+  creativeguard.unbreakable:
+    description: 'Allow player to use/own item with Unbreakable NBT.'
+    default: op
+  creativeguard.attributemodifiers:
+    description: 'Allow player to use/own item with AttributeModifiers NBT.'
+    default: op
+
+  creativeguard.invalidenchants:
+    description: 'Allow player to use/own item with invalid enchants.'
+    default: op
+  creativeguard.invalidanvildamage:
+    description: 'Allow player to use/own anvil with invalid damage data.'
+    default: op
+
+  creativeguard.netherportaltospawn:
+    description: 'Nether portals will teleport players to spawnpoint.'
+    default: true
+
+  creativeguard.command.searchandseizure:
+    description: 'Permission for SearchAndSeizure command.'
+    default: op
+  creativeguard.command.checknbt:
+    description: 'Permission for CheckNBT command.'
+    default: op
+
+  creativeguard.notify:
+    description: 'Premission for notifications.'
+    default: op
+
